@@ -1,5 +1,7 @@
 prefixes:
-  global: ''
+  # global => '',
+  # Have to change to get to work in subdirectory of qm-api
+  global: '/tddd'
   dashboard: ''
   tests: "/tests"
   projects: "/projects"

@@ -54,11 +54,12 @@ return [
      */
     'regex_file_matcher' => '/([A-Za-z0-9\/._-]+)(?::| on line )([1-9][0-9]*)/',
 
-    /**
-     * Regex to match file names and li
-     *
-     */
-    'poll_interval' => 300, // ms
+	/**
+	 * How often the dashboard checks for updates
+	 *  Reduced because 300 destroys my server
+	 */
+	'poll_interval' => 20000, // ms
+	//'poll_interval' => 300, // ms
 
     /**
      * Projects

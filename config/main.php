@@ -31,7 +31,8 @@ return [
      *
      */
     'url_prefixes' => [
-        'global' => '',
+        //'global' => '', Have to change to get to work in subdirectory of qm-api
+	    'global' => '/tddd',
 
         'dashboard' => '',
 
@@ -55,10 +56,11 @@ return [
     'regex_file_matcher' => '/([A-Za-z0-9\/._-]+)(?::| on line )([1-9][0-9]*)/',
 
     /**
-     * Regex to match file names and li
-     *
+     * How often the dashboard checks for updates
+     *  Reduced because 300 destroys my server
      */
-    'poll_interval' => 300, // ms
+    'poll_interval' => 20000, // ms
+	//'poll_interval' => 300, // ms
 
     /**
      * Projects

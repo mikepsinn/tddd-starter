@@ -21,11 +21,12 @@ return [
     |--------------------------------------------------------------------------
     |
     | The root dir of your projects.
+    / I think this is relative to your home directory?
     |
     */
-
     'code' => [
-        'path' => env('APP_CODE_PATH', '/code')
+	    //'path' => env('APP_CODE_PATH', '/code')
+        'path' => env('APP_CODE_PATH', '/mnt/c/Development/qm-api')
     ],
 
     /*
